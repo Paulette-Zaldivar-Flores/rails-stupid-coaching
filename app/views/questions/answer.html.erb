@@ -1,10 +1,13 @@
-<h1 class="banner">Stupid Coach</h1>
-<p>---------------------------------------------------</p>
-<p><%= @question %></p>
-<p>You</p>
+<div class = "card">
+<h1 class="banner">Coach</h1>
 <br>
-<p><%= @answer %></p>
-<p>Coach</p>
+<p class = "reply"><%= @question %></p>
+<p class = "you">You</p>
+<br>
+<p class = "reply"><%= @answer %></p>
+<p class = "coach">Coach</p>
 <br>
 <br>
-<%= link_to "Ask a new question", "/ask" %>
+<button class="btn btn-outline-primary" type="submit"><%= link_to "Ask a new question", "/ask" %></button>
+
+<div>
